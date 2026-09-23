@@ -1,0 +1,133 @@
+/* Reset and layout base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Deep dark blue slate background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f8fafc;
+    padding: 20px;
+}
+
+/* Central Card Component */
+.update-card {
+    background-color: #1e293b; /* Subtle contrast card blue */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+/* Spinner Section */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #334155;
+    border-top-color: #38bdf8; /* Bright electric blue accent */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Text Hierarchy */
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+    letter-spacing: -0.5px;
+}
+
+.status-subtext {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 28px;
+    line-height: 1.4;
+}
+
+/* Inner Text Container */
+.changelog-container {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.changelog-container h3 {
+    font-size: 0.9rem;
+    color: #38bdf8;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.update-description {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Action Button */
+.nav-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #0f172a;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.15);
+}
+
+.nav-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+}
+
+.nav-btn:active {
+    transform: translateY(1px);
+}
+
+/* Rotation Effect */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#redtext {
+    color: red;
+}
+
+#bluetext {
+    color: blue;
+}
+
+#greentext {
+    color: green;
+}
